@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: user-center
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_center?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: Jyp23156033@
+    driver-class-name: com.mysql.cj.jdbc.Driver
