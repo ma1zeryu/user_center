@@ -2,6 +2,7 @@ package com.maizer.usercenter.model;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.util.Date;
 import lombok.Data;
@@ -72,5 +73,6 @@ public class User {
     /**
      * 是否被删除
      */
+    @TableLogic
     private Integer isDelete;
 }

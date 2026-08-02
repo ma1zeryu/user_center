@@ -2,6 +2,7 @@ package com.maizer.usercenter.service;
 
 import com.maizer.usercenter.model.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
 * @author 17702
@@ -18,4 +19,14 @@ public interface UserService extends IService<User> {
      * @return 新用户id
      */
     long userRegister(String userAccount, String userPassword, String checkPassword);
+
+    /**
+     * 用户登录
+     *
+     * @param userAccount
+     * @param userPassword
+     * @param request
+     * @return 返回脱敏后的用户信息
+     */
+    User userLogin(String userAccount, String userPassword, HttpServletRequest request);
 }
