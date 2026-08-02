@@ -71,6 +71,11 @@ public class User {
     private Date updateTime;
 
     /**
+     * 用户权限， 1 - 管理员， 0 - 普通用户
+     */
+    private Integer role;
+
+    /**
      * 是否被删除
      */
     @TableLogic
