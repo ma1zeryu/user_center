@@ -1,5 +1,8 @@
 package com.maizer.usercenter.contant;
 
+/**
+ * 常量定义文件
+ */
 public interface UserConstant {
     /**
      * 用户登录态键

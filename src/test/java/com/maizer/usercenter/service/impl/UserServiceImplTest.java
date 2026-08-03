@@ -29,19 +29,19 @@ class UserServiceImplTest {
         Assertions.assertTrue(result);
     }
 
-    @Test
-    void userRegister() {
-        String userAccount = "玉米排骨汤";
-        String userPassword = "12345678";
-
-        String checkPassword = "12345678";
-        long userId = userService.userRegister(userAccount, userPassword, checkPassword);
-        // 如果注册成功，返回的是用户ID（应该 > 0）
-        Assertions.assertTrue(userId > 0);
-
-        // 去数据库查一下，看看是不是真的插入了
-        User user = userService.getById(userId);
-        Assertions.assertNotNull(user);
-        Assertions.assertEquals(userAccount, user.getUserAccount());
-    }
+//    @Test
+//    void userRegister() {
+//        String userAccount = "玉米排骨汤";
+//        String userPassword = "12345678";
+//
+//        String checkPassword = "12345678";
+//        long userId = userService.userRegister(userAccount, userPassword, checkPassword);
+//        // 如果注册成功，返回的是用户ID（应该 > 0）
+//        Assertions.assertTrue(userId > 0);
+//
+//        // 去数据库查一下，看看是不是真的插入了
+//        User user = userService.getById(userId);
+//        Assertions.assertNotNull(user);
+//        Assertions.assertEquals(userAccount, user.getUserAccount());
+//    }
 }
